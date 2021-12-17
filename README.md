@@ -18,7 +18,7 @@ zookeeper直接启动即可,进入bin目录,执行 `sh zkServer.sh start`  启�
 
         lib 这里面的jar包是所有deploys下面的模块项目通用的,比如mysql驱动,数据库连接池等等相关的jar包,可以放到这里.
 
-        logs 存放日志
+        logs 存放日志.
 
  deploys 补充说明:
     例如写了一个 user模块,admin模块,以下是deploys的目录结构.
