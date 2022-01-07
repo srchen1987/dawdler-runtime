@@ -1,8 +1,7 @@
 @echo off
 set vm_arguments=-Xms1g -Xmx1g -Xmn512m 
 set java_opts=--add-opens=java.base/java.nio=dawdler.core --add-opens=java.base/java.lang=cglib  --add-opens=java.base/jdk.internal.loader=dawdler.server --add-opens=java.base/jdk.internal.misc=dawdler.core  --add-opens=java.base/jdk.internal.perf=dawdler.server  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang=kryo
-
-BOOTSTRAP="dawdler.server/com.anywide.dawdler.server.bootstarp.Bootstrap";
+set BOOTSTRAP="dawdler.server/com.anywide.dawdler.server.bootstarp.Bootstrap";
 set "DAWDLER_BIN_PATH=%cd%"
 cd ..
 set "DAWDLER_BASE_PATH=%cd%"
