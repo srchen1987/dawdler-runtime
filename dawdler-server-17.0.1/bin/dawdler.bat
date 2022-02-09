@@ -1,13 +1,12 @@
 @echo off
 set vm_arguments=-Xms1g -Xmx1g -Xmn512m 
 set java_opts=--add-opens=java.base/java.nio=dawdler.core --add-opens=java.base/java.lang=cglib  --add-opens=java.base/jdk.internal.loader=dawdler.server --add-opens=java.base/jdk.internal.misc=dawdler.core  --add-opens=java.base/jdk.internal.perf=dawdler.server  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang=kryo
-set BOOTSTRAP="dawdler.server/com.anywide.dawdler.server.bootstarp.Bootstrap";
+set BOOTSTRAP=dawdler.server/com.anywide.dawdler.server.bootstarp.Bootstrap
 set "DAWDLER_BIN_PATH=%cd%"
 cd ..
 set "DAWDLER_BASE_PATH=%cd%"
-set vm_arguments="%vm_arguments% -DDAWDLER_BASE_PATH=%DAWDLER_BASE_PATH% -DDAWDLER_BIN_PATH=%DAWDLER_BIN_PATH%"
-set _RUNJAVA="java %vm_arguments% %java_opts% -p . -cp . -m  %BOOTSTRAP%"
-
+set vm_arguments=%vm_arguments% -DDAWDLER_BASE_PATH=%DAWDLER_BASE_PATH% -DDAWDLER_BIN_PATH=%DAWDLER_BIN_PATH%
+set _RUNJAVA=java %vm_arguments% %java_opts% -p . -cp . -m  %BOOTSTRA%
 cd bin
 if ""%1"" == """" goto doHelp
 if ""%1"" == ""run"" goto doRun
