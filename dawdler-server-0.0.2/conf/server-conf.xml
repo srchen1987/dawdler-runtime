@@ -9,6 +9,7 @@
 			<jar-file>dawdler-distributed-transaction-server-0.0.2-RELEASES.jar</jar-file>
 		</jar-files>
 		<packages-in-jar>
+			<package-path>com.anywide.dawdler.distributed.transaction.aspect</package-path>
 			<package-path>com.anywide.dawdler.serverplug.listener</package-path>
 			<package-path>com.anywide.dawdler.serverplug.service.impl</package-path>
 			<package-path>com.anywide.dawdler.serverplug.db.dao.listener</package-path>
