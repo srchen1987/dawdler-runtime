@@ -10,6 +10,8 @@
 		</jar-files>
 		<packages-in-jar>
 			<package-path>com.anywide.dawdler.distributed.transaction.aspect</package-path>
+			<package-path>com.anywide.dawdler.serverplug.db.mybatis.aspect</package-path>
+			<package-path>org.apache.ibatis.session.defaults</package-path>
 			<package-path>com.anywide.dawdler.serverplug.listener</package-path>
 			<package-path>com.anywide.dawdler.serverplug.service.impl</package-path>
 			<package-path>com.anywide.dawdler.serverplug.db.dao.listener</package-path>
