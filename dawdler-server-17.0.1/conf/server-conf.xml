@@ -3,30 +3,21 @@
 	<scanner>
 		<jar-files>
 			<jar-file>dawdler-server-plug-0.17.1-jdk17-RELEASES.jar</jar-file>
-			<jar-file>dawdler-server-plug-dao-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
-			<jar-file>dawdler-server-plug-mybatis-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
-			<jar-file>dawdler-server-plug-config-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
-			<jar-file>dawdler-server-plug-rabbitmq-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
-			<jar-file>dawdler-server-plug-redis-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
-			<jar-file>dawdler-distributed-transaction-core-0.17.1-jdk17-RELEASES.jar
-			</jar-file>
+			<jar-file>dawdler-server-plug-db-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-dao-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-mybatis-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-config-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-rabbitmq-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-redis-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-es-0.17.1-jdk17-RELEASES.jar</jar-file>
+			<jar-file>dawdler-distributed-transaction-core-0.17.1-jdk17-RELEASES.jar</jar-file>
 		</jar-files>
 		<packages-in-jar>
-			<package-path>com.anywide.dawdler.distributed.transaction.aspect
-			</package-path>
-			<package-path>com.anywide.dawdler.serverplug.db.mybatis.aspect
-			</package-path>
-			<package-path>com.anywide.dawdler.serverplug.db.mybatis.session
-			</package-path>
-			<package-path>com.anywide.dawdler.serverplug.service.impl
-			</package-path>
-			<package-path>com.anywide.dawdler.serverplug.**.listener
-			</package-path>
+			<package-path>com.anywide.dawdler.distributed.transaction.aspect</package-path>
+			<package-path>com.anywide.dawdler.serverplug.db.mybatis.aspect</package-path>
+			<package-path>com.anywide.dawdler.serverplug.db.mybatis.session</package-path>
+			<package-path>com.anywide.dawdler.serverplug.service.impl</package-path>
+			<package-path>com.anywide.dawdler.serverplug.**.listener</package-path>
 		</packages-in-jar>
 	</scanner>
 	<keyStore
@@ -61,5 +52,5 @@
 		<dataSource check="on" />
 		<config check="on" />
 	</health-check>
-	
+
 </config>
