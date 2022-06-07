@@ -19,11 +19,11 @@ then
 $_RUNJAVA run
 elif [ "$1" = "stopnow" ]
 then
-echo "stop server\t$DAWDLER_BASE_PATH"
+echo "stop server $DAWDLER_BASE_PATH"
 $_RUNJAVA stopnow
 elif [ "$1" = "stop" ]
 then
-echo "stop server\t$DAWDLER_BASE_PATH"
+echo "stop server $DAWDLER_BASE_PATH"
 $_RUNJAVA stop
 else
 echo "commands:"
