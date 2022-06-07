@@ -5,15 +5,17 @@
 			<jar-file>dawdler-server-plug-0.0.2-RELEASES.jar</jar-file>
 			<jar-file>dawdler-server-plug-dao-0.0.2-RELEASES.jar</jar-file>
 			<jar-file>dawdler-server-plug-mybatis-0.0.2-RELEASES.jar</jar-file>
-			<jar-file>dawdler-config-serverside-0.0.2-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-db-0.0.2-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-config-0.0.2-RELEASES.jar</jar-file>
 			<jar-file>dawdler-server-plug-rabbitmq-0.0.2-RELEASES.jar</jar-file>
 			<jar-file>dawdler-server-plug-redis-0.0.2-RELEASES.jar</jar-file>
+			<jar-file>dawdler-server-plug-es-0.0.2-RELEASES.jar</jar-file>
 			<jar-file>dawdler-distributed-transaction-core-0.0.2-RELEASES.jar</jar-file>
 		</jar-files>
 		<packages-in-jar>
 			<package-path>com.anywide.dawdler.distributed.transaction.aspect</package-path>
 			<package-path>com.anywide.dawdler.serverplug.db.mybatis.aspect</package-path>
-			<package-path>org.apache.ibatis.session.defaults</package-path>
+			<package-path>com.anywide.dawdler.serverplug.db.mybatis.session</package-path>
 			<package-path>com.anywide.dawdler.serverplug.service.impl</package-path>
 			<package-path>com.anywide.dawdler.serverplug.**.listener</package-path>
 		</packages-in-jar>
@@ -38,4 +40,12 @@
 			<user username="order_user1" password="user1password" />
 		</module>
 	</module-auth><!-- 模块下的用户，只能调用指定模块 第一行为帐号 第二行为密码 -->
+	
+	<health-check check="off" scheme="https" port="19001" backlog="0" username="jackson" password="jackson.song" >
+		<elasticSearch check="on" />
+		<jedis check="on" />
+		<rabbit check="on" />
+		<dataSource check="on" />
+		<config check="on" />
+	</health-check>
 </config>
